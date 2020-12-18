@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Indiivdual element layout for Classes, includes name, description,
+ picture and buttons-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+<!--    Image for each Class view-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!-- View for Title attribute -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/main_title"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+<!--        View for Class description-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/sub_title"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--Button for Viewing Class Tasks-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:text="@string/view_assignments"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/viewButton"
+            android:paddingHorizontal="20dp"
+            app:backgroundTint="#FD0909"
+            />
+
+
+<!--        Button for Deleting Classes-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="@string/delete"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/deleteButton"
+            app:backgroundTint="#FD0909" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

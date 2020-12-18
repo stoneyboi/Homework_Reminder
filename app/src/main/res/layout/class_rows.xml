@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/NameD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/named"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NameA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/NameD"
+            android:text="@string/task_name"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/NameD" />
+
+        <TextView
+            android:id="@+id/PriorityD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/NameA"
+            android:text="@string/priorityd"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/PriorityA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/PriorityD"
+            android:layout_below="@+id/NameA"
+            android:text="@string/priority_level"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_toEndOf="@id/PriorityD" />
+
+        <TextView
+            android:id="@+id/DueDateD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/PriorityA"
+            android:text="@string/dued"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/DueDateA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/PriorityA"
+            android:layout_toRightOf="@id/DueDateD"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/due_date"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_toEndOf="@id/DueDateD"
+            android:paddingStart="5dp" />
+
+        <Button
+            android:id="@+id/floatDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DueDateD"
+            android:text="@string/delete"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:src="@drawable/reddeletebin"
+            />
+
+
+    </RelativeLayout>
+
+

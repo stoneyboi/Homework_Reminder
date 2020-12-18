@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassView"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/BtoCButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtoC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:dividerHeight="2dp"
+        android:divider="@color/black"
+        android:backgroundTint="@color/teal_700"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_task" />
+
+
+</LinearLayout>
